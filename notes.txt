@@ -1,0 +1,65 @@
+IP Address
+    *   A unique string of numbers separated by full stops that identifies each computer using the Internet Protocol 
+        to communicate over a network.
+
+Public vs Private IP
+    *   router Wi-Fi IP vs ISP (Vodafone and AT & T)
+    *   Finding out both IP addresses -
+        -   Public IP - Google "Whats my IP"
+        -   Private IP - Windows (ipconfig), Linux or Mac (ifconfig)
+
+Static vs Dynamic IP
+    *   Static IP addresses never change
+    *   Dynamic IP addresses always keep changing
+        - restarting pc will show you change in IP for the Dynamic IP
+    
+    *   Static - Servers and website
+    *   Dynamic - Computer and mobile devices
+    
+    *   How to find static IP address of website
+        -   ping google.com -> will give you ip address and type the ip to go to google.
+
+Port
+    *   IP Adress represents city whereas Port # represent exact house you live in.
+        - netstat -a -b -n (need admin right)
+    *   Think about port as exact room number.
+    *   Common ports list - https://www.webopedia.com/quick_ref/portnumbers.asp
+
+Sockets
+    *   A socket is one endpoint of a two-way communication link between two programs running on the network.
+        A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to.
+        An endpoint is a combination of an IP address and a port number.
+
+    *   socket.socket()     - create socket
+    *   s.bind(host,port)   - bind socket
+    *   s.send()            - send a message
+    *   s.listen()          - listening to the communication
+    *   s.recv()            - receiveing the message
+    *   s.close()           - closing the socket.
+
+Direct and Reverse Connections
+    How the connection happans? -- Direct Connection
+        1) Host / IP Addresss + Port 
+        2) Socket
+
+    Problems with direct connection
+        * It is difficult to get IP address
+        * Even if we get his IP address, the IP address is Dynamic IP so its always changing
+        * Even we could get regular updates to the Dynamic IP address, the computer has bunch of firewalls, 
+            which makes it impossible to get into that computer.
+
+    Reverse Connection
+        * python file that does reverse shell script -> attach ip address and port of the hacker's pc and send it via email or via usb?
+            then whene victom opens the file, it creates a reverse connection to the hacker's computer.
+
+Server
+    * Remote computer when you can store files or host websites
+    * It has a static IP address
+    * You need internet to access this remote computer
+
+Reverse shell
+    *   way to connect into anyone's computer using Reverse shell
+    *   one of the hecker's tool
+
+    server.py       ->  client.py 
+    cloud server    ->  friend's pc
