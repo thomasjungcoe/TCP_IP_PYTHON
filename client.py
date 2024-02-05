@@ -8,7 +8,7 @@ import os
 import subprocess
 
 s = socket.socket()         #create a socket object
-host = '192.168.1.153'
+host = 'xxx.xxx.x.xxx'
 port = 9999
 
 s.connect((host, port))     #connect to the port
